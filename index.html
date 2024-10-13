@@ -7,35 +7,53 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div id="main">
         <div id="sidebar">
-            <img src="img/bird.jpg" alt="" class="image">
-            <div id="back-line">
+            <img id ="bird" src="img/bird.jpg" alt="Cool-bird" class="image">
+            <div id="line">
+                <div id="back-line"></div>
                 <img src="/img/birdlogo.png" alt="">
                 <p></p>
             </div>
         </div>
+
+        <div id="separate"></div>
+        
         <div id="form-box">
             <h1 id="title">Sign Up for the Bird Watchers Club!</h1>
+            <p>Signing up will give you the latest news about birds!</p>
             <form action="/" method="get">
-                
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-                <label for="phone-number">Phone Number</label>
-                <input type="text" id="phone-number">
-                <label for="password">Password</label>
-                <input type="text" id="password">
-                <label for="confirm-pass">Confirm Password</label>
-                <input type="text" id="confirm-pass">
 
-                <button type="submit">Create Account</button>
+                <div id="form">
+                    <section class="sec">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name">
+                    </section>
+                    <section class="sec">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name">
+                    </section>
+                    <section class="sec">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </section>
+                    <section class="sec">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="text" id="phone-number">
+                    </section>
+                    <section class="sec">
+                        <label for="password">Password</label>
+                        <input type="text" id="password">
+                    </section>
+                    <section class="sec">
+                        <label for="confirm-pass">Confirm Password</label>
+                        <input type="text" id="confirm-pass">
+                    </section>
 
+               </div>
+               <button type="submit" class="btn">Create Account</button>
             </form>
+
+            
         </div>
-    </div>
 </body>
 </html>

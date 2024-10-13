@@ -1,7 +1,99 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root
+{
+    --line-width: 20px;
+    --line-positon: 560px;
+    --background-form: #e3e3e3;
+
+
+    font-size: 10px;
+}
 
 
 
-#main
+#bird 
+{
+    height: 100vh;
+    width: 30%;
+    opacity: 80%;
+}
+
+#separate, #bird, #line
+{
+    position: fixed;
+}
+
+
+#form-box
+{
+    width: 70%;
+    height: 1000px;
+    background-color: var(--background-form);
+    position: relative;
+    left: calc(var(--line-width) + (var(--line-positon)));
+    padding: 80px;
+}
+
+#separate
+{
+    height: 100vh;
+    width: var(--line-width);
+    background-color: black;
+    left: var(--line-positon);
+    top: 0;
+}
+
+
+h1
+{
+    margin: 50px 0;
+    font-size: 4rem;
+}
+
+#form 
 {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 400px;
+    background-color: white;
+    padding: 20px;
+
+    border-bottom: 3px solid grey;
+    border-radius: 30px;
+}
+
+label
+{
+    font-size: 2.2rem;
+}
+
+input {
+    width: 180px;
+    height: 25px;
+    border: 2px solid black;
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    
+
+    width: 350px;
+    height: 120px;
+    gap: 15px;
+}
+
+.btn
+{
+    margin: 20px;
 }
