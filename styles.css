@@ -11,6 +11,7 @@
 {
     --line-width: 20px;
     --line-positon: 560px;
+    --backline-position: 50%;
     --background-form: #e3e3e3;
 
 
@@ -26,11 +27,27 @@
     opacity: 80%;
 }
 
-#separate, #bird, #line
+#separate, #bird, #line, #logo
 {
     position: fixed;
 }
 
+
+#line
+{
+    background-color: black;
+    height: 180px;
+    opacity: 60%;
+    width: 100%;
+    top: var(--backline-position);
+}
+
+#logo
+{
+    opacity: 100%;
+    top: var(--backline-position);
+    left: 180px;
+}
 
 #form-box
 {
@@ -42,15 +59,18 @@
     padding: 80px;
 }
 
+
+
+
+
 #separate
 {
     height: 100vh;
-    width: var(--line-width);
+    width: 5%;
     background-color: black;
     left: var(--line-positon);
     top: 0;
 }
-
 
 h1
 {
